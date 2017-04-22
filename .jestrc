@@ -1,3 +1,4 @@
 {
-  "clearMocks": true
+  "clearMocks": true,
+  "snapshotSerializers": ["<rootDir>/node_modules/jest-serializer-enzyme"]
 }

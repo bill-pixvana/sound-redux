@@ -6,6 +6,11 @@ jest.mock('global', () => ({
   },
 }));
 
+import React from 'React';
+import { localStorage } from 'global';
+import Player from '../../client/components/Player';
+import { mount } from 'enzyme';
+
 const basicProps =  {
   dispatch: () => {},
   player: {},
@@ -14,11 +19,6 @@ const basicProps =  {
   songs: { 1: { user_id: 1, title: '' } },
   users: { 1: { username: ''} },
 };
-
-import React from 'React';
-import { localStorage } from 'global';
-import Player from '../../client/components/Player';
-import { mount } from 'enzyme';
 
 describe('volume', () => {
   it('initial level is 1', () => {

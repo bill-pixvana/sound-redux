@@ -1,6 +1,10 @@
 import * as RouteUtils from '../../client/utils/RouteUtils';
 
+
 describe('RouteUtils', () => {
+    describe('api', () => {
+      it('should be correct', () => {expect(RouteUtils).toMatchSnapshot()});
+    });
     describe('constructUrl', () => {
         it('should correctly construct a url', () => {
             const route = {path: ['songs'], query: {q: 'drake'}};
